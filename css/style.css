@@ -4,16 +4,34 @@
     padding: 0;
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     font-family: 'Circular Std', sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 main {
-    height: 80vh;
-    background-color: red;
+    height: 90vh; 
 }
 
 footer {
-    height: 20vh;
+    height: 10vh;
     background-color: gray;
 }
+
+#main-app {
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+}
+
+#left-menu {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+
