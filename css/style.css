@@ -29,14 +29,21 @@ footer {
     background-color: black;
 }
 
+#playlists {
+    height: 90%;
+}
+
 .music-card {
-    width: calc(100% / 6);
     text-align: center;
 }
 
 .playlist-logo > img {
-    width: 70%;
+    width: 60%;
 }
+
+.song-info {
+    line-height: 0.7;
+    font-size: 1.5rem;}
 
 span {
     font-size: 13px;
@@ -51,10 +58,6 @@ span {
     height: 10%;
     background-color: blue;
     text-align: right;
-}
-
-#playlists {
-    height: 90%;
 }
 
 
@@ -72,7 +75,28 @@ span {
 }
 
 @media screen and (max-width: 1200px) {
-    
+    #recently-played {
+    height: 65%;
+    /*     flex-wrap: wrap;
+        width: 95%; */
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+    }
+
+    .music-card {
+    width: calc(100% / 4);
+    }
+
+    #playlists {
+        overflow: auto;
+    }
+
+    .playlist-logo > img {
+    flex-wrap: wrap;
+    width: 75%;
+    }
 }
 
 
