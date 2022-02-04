@@ -23,15 +23,58 @@ footer {
     background-color: gray;
 }
 
-#main-app {
-    width: 80%;
-    height: 100%;
-    background-color: blue;
-}
-
 #left-menu {
-    width: 20%;
+    width: 15%;
     height: 100%;
     background-color: black;
 }
+
+.music-card {
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.playlist-logo > img {
+    width: 70%;
+}
+
+span {
+    font-size: 13px;
+}
+
+#main-app {
+    width: 85%;
+    height: 100%;
+}
+
+#upgrade {
+    height: 10%;
+    background-color: blue;
+    text-align: right;
+}
+
+#playlists {
+    height: 90%;
+}
+
+
+
+#swipe-music-sections {
+    height: 5%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#recently-played, #Jon-Doe-playlist, #popular-artists{
+    height: calc(95% / 3);
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+
 
