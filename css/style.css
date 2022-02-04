@@ -31,22 +31,34 @@ footer {
 
 #playlists {
     height: 90%;
+    overflow: auto;
+    background-color: brown;
+}
+
+.playlist-container {
+    width: 90%;
+    margin: 50px auto;
 }
 
 .music-card {
     text-align: center;
+    width: calc(100% / 6);
+    margin-right: 15px;
+}
+
+#recently-played h5, #Jon-Doe-playlist h5, #popular-artists h5 {
+    margin-bottom: 10px;
+    padding-top: 5px;
 }
 
 .playlist-logo > img {
-    width: 60%;
+    width: 100%;
 }
 
 .song-info {
-    line-height: 0.7;
-    font-size: 1.5rem;}
-
-span {
-    font-size: 13px;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 #main-app {
@@ -60,42 +72,47 @@ span {
     text-align: right;
 }
 
-
-
 #swipe-music-sections {
     height: 5%;
     background-color: blueviolet;
     text-align: center;
 }
 
-#recently-played, #Jon-Doe-playlist, #popular-artists{
-    height: calc(95% / 3);
-    background-color: crimson;
-    border: 1px solid black;
+#popular-artists img {
+    border-radius: 50%;
 }
 
-@media screen and (max-width: 1200px) {
-    #recently-played {
-    height: 65%;
-    /*     flex-wrap: wrap;
-        width: 95%; */
-    }
 
+
+
+
+
+@media screen and (max-width: 1200px) {
     .cards-container {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     }
 
     .music-card {
     width: calc(100% / 4);
+    margin-bottom: 20px;
+    margin-right: 0;
     }
 
     #playlists {
-        overflow: auto;
+    overflow: auto;
     }
 
     .playlist-logo > img {
     flex-wrap: wrap;
     width: 75%;
+    }
+
+    .song-info span {        
+    font-size: 0.7rem;
+    }
+
+    #left-menu {
+        min-width: 180px;
     }
 }
 
