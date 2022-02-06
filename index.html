@@ -8,6 +8,7 @@
     <title>Spotify-Web</title>
 
     <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -15,17 +16,66 @@
 <body>
     <main class="flex">
         <menu id="left-menu">
-            Left Menu
+            <div class="left-menu-container">
+                <div class="spotify-logo">
+                    <img src="img/logo.svg" alt="Spotify logo">
+                </div>
+
+                <div class="main-place">
+                    <p class="hover"><i class="fas fa-home"></i> Home</p>
+                    <p class="hover"><i class="fas fa-search"></i> Cerca</p>
+                    <p class="hover"><i class="fas fa-grip-lines-vertical"></i> La tua libreria</p>
+                </div>
+
+                <div class="left-playlist">
+                    <h4>
+                        Playlist
+                    </h4>
+
+                    <div id="make-playlist">
+                        <p class="hover"><i class="fas fa-plus-square"></i> Crea Playlist</p>
+                    </div>
+
+                    <ul>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                    </ul>
+
+                    <div id="install-spotify" class="flex">
+                        <span class="hover">
+                            <i class="far fa-arrow-alt-circle-down"></i> Installa app
+                        </span>
+
+                        <hr>
+
+                        <p>
+                            <i class="far fa-user-circle"></i> Ale Fregno
+                    </div>
+                </div>
+            </div>
         </menu>
 
         <section id="main-app">
-            <header id="upgrade">
-                Effettua Upgrade
+            <header id="upgrade" >
+                <div id="upgrade-spotify">
+                    <span>Effettua Upgrade</span>
+                </div>
             </header>
 
             <main id="playlists">
                 <nav id="swipe-music-sections">
-                    Cambia sezione della musica
+                    <ul>
+                        <li class="hover">In evidenza</li>
+                        <li class="hover">Podcast</li>
+                        <li class="hover">Classifiche</li>
+                        <li class="hover">Generi e mood</li>
+                        <li class="hover">Nuove uscite</li>
+                        <li class="hover">Scopri</li>
+                    </ul>
                 </nav>
 
                 <div id="recently-played" class="flex">
@@ -37,8 +87,12 @@
                         <div class="cards-container flex">
                             <!-- Le cards saranno tutte uguali in dimensioni -->
                             <div class="music-card">
-                                <div class="playlist-logo">
+                                <div class="playlist-logo" >
                                     <img src="img/metal_lifting.jpg" alt="">
+
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -54,7 +108,31 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/stranger.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
+
+                                <div class="song-info">
+                                    <h6>
+                                        Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                                    </h6>
+
+                                    <span>
+                                        Kyle Dixon & Michael Stein
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="music-card">
+                                <div class="playlist-logo">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -70,7 +148,11 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/split.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -86,7 +168,11 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/cure.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -102,23 +188,11 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                </div>
-
-                                <div class="song-info">
-                                    <h6>
-                                        Heavy Metal
-                                    </h6>
-
-                                    <span>
-                                        Subtitle
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="music-card">
-                                <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/sinister.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -137,15 +211,26 @@
 
                 <div id="Jon-Doe-playlist" class="flex">
                     <div class="playlist-container">
-                        <h5>
-                            Recently played
-                        </h5>
+                        
+                        <div class="more-listening">
+                            <h5>
+                                Creato per John Doe
+                            </h5>
+
+                            <span>
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </span>
+                        </div>
 
                         <div class="cards-container flex">
                             <!-- Le cards saranno tutte uguali in dimensioni -->
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/radar.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -161,7 +246,11 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/mixdaily.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -180,15 +269,25 @@
 
                 <div id="popular-artists" class="flex">
                     <div class="playlist-container">
-                        <h5>
-                            Recently played
-                        </h5>
+                        <div class="more-listening">
+                            <h5>
+                                Artisti più popolari
+                            </h5>
+
+                            <span>
+                                Più ascolti, più accurati saranno i suggerimenti.
+                            </span>
+                        </div>
 
                         <div class="cards-container flex">
                             <!-- Le cards saranno tutte uguali in dimensioni -->
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/einaudi.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -204,7 +303,11 @@
 
                             <div class="music-card">
                                 <div class="playlist-logo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <img src="img/youg.jpeg" alt="">
+                                
+                                    <div class="overlay flex">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
                                 </div>
 
                                 <div class="song-info">
@@ -225,7 +328,57 @@
     </main>
 
     <footer>
-        Comandi di navigazione
+        <div id="footer-container" class="flex">
+            <div id="left-footer" class="flex">
+                <div id="currently-playing">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+
+                <div id="artist" class="flex">
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+
+                <div id="left-footer-options" class="flex">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+
+            <div id="central-footer">
+                <div id="central-footer-top-side">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+
+                <div id="song-duration" class="flex">
+                    <span>
+                        0:25
+                    </span>
+
+                    <div id="song-bar">
+                        <div id="song-minute"></div>
+                    </div>
+
+                    <span>
+                        4:35
+                    </span>
+                </div>
+            </div>
+
+            <div id="right-footer" class="flex">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                
+                <div id="volume-bar">
+                    <div id="actual-volume"></div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 

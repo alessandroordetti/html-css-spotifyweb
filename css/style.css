@@ -8,9 +8,42 @@
     display: flex;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hover:hover{
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(54, 44, 44, 0.507);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay i {
+    font-size: 75px;
+    color: white;
+}
+
+.playlist-logo:hover .overlay {
+    opacity: 1;
+}
+
 body {
     font-family: 'Circular Std', sans-serif;
-    color: white;
+    color: #7a7c81;
     font-size: 30px;
 }
 
@@ -27,17 +60,52 @@ footer {
     width: 15%;
     height: 100%;
     background-color: black;
+    font-size: 18px;
+}
+
+.left-menu-container {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.3rem;
+}
+
+.spotify-logo img{
+    width: 100%;
+    padding: 20px;
+}
+
+.main-place {
+    margin-bottom: 15px;
+}
+
+.left-playlist h4 {
+    color: white;
+}
+
+#make-playlist i {
+    font-size: 40px;
+}
+
+#install-spotify {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+}
+
+#install-spotify p {
+    color: white;
+    font-size: 22px;
 }
 
 #playlists {
     height: 90%;
     overflow: auto;
-    background-color: brown;
+    background-color: #141922;
 }
 
 .playlist-container {
     width: 90%;
-    margin: 50px auto;
+    margin: 15px auto;
 }
 
 .music-card {
@@ -53,12 +121,27 @@ footer {
 
 .playlist-logo > img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
-.song-info {
+.playlist-logo {
+    position: relative;
+}
+
+.song-info, .playlist-container > span{
     line-height: 1rem;
     font-size: 1rem;
     margin-bottom: 10px;
+}
+
+.playlist-container .more-listening {
+    margin-bottom: 10px;
+    line-height: 1rem;
+}
+
+.playlist-container .more-listening span {
+    font-size: 16px;
 }
 
 #main-app {
@@ -68,18 +151,138 @@ footer {
 
 #upgrade {
     height: 10%;
-    background-color: blue;
+    background-color: #080b12;
     text-align: right;
+}
+
+#upgrade-spotify {
+    height: 100%;
+}
+
+#upgrade > span {
+    border: 1px solid white;
 }
 
 #swipe-music-sections {
     height: 5%;
-    background-color: blueviolet;
     text-align: center;
+}
+
+#swipe-music-sections ul li{
+    display: inline;
+    font-size: 15px;
+    padding: 0 5px;
+    text-transform: uppercase;
 }
 
 #popular-artists img {
     border-radius: 50%;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #282828;
+}
+
+#footer-container {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#currently-playing {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#currently-playing img {
+    width: 100%;
+}
+
+#artist {
+    font-size: 10px;
+    margin-right: 20px;
+    align-items: center;
+    width: 60px;
+    flex-wrap: wrap;
+}
+
+#left-footer-options {
+    font-size: 22px;
+    align-items: center;
+}
+
+#left-footer-options i {
+    padding: 10px;
+    color: #878787;
+}
+
+#central-footer-top-side, #song-duration {
+    height: 50%;
+}
+
+#central-footer-top-side i {
+    font-size: 22px;
+    padding: 10px 12px;
+}
+
+#central-footer-top-side {
+    text-align: center;
+}
+
+#song-duration {
+    align-items: center;
+}
+
+#song-duration span {
+    font-size: 10px;
+    margin: 0 15px;
+}
+
+#song-bar {
+    width: 500px;
+    height: 4px;
+    border-radius: 15px;
+    background-color: #5a5a5a;
+    position: relative;
+}
+
+#song-minute {
+    height: 4px;
+    width: 100px;
+    background-color: #c1c1c1;
+    position: absolute;
+    left: 0;
+}
+
+#right-footer {
+    height: 100%;
+    align-items: center;
+}
+
+#right-footer i {
+    padding: 0 12px;
+    font-size: 22px
+}
+
+#volume-bar {
+    width: 100px;
+    height: 4px;
+    background-color: #5a5a5a;
+    position: relative;
+    border-radius: 15px;
+}
+
+#actual-volume {
+    height: 4px;
+    width: 40px;
+    background-color: #c1c1c1;
+    position: absolute;
+    left: 0;
 }
 
 
@@ -113,6 +316,38 @@ footer {
 
     #left-menu {
         min-width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .music-card {
+        width: calc(100% / 2);
+        margin-bottom: 20px;
+        margin-right: 0;
+        }
+
+        #swipe-music-sections ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 576px) {
+    #left-menu {
+        min-width: 0;
+    }
+
+    .spotify-logo{
+        display: none;
+    }
+
+    .main-place, .left-playlist {
+        display: none;
+    }
+
+    .left-menu-container {
+
     }
 }
 
