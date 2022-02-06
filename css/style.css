@@ -153,14 +153,21 @@ footer {
     height: 10%;
     background-color: #080b12;
     text-align: right;
+    position: relative;
 }
 
-#upgrade-spotify {
-    height: 100%;
-}
-
-#upgrade > span {
+#upgrade-spotify span {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    color: white;
     border: 1px solid white;
+    border-radius: 42px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    width: 250px;
+    text-transform: uppercase;
 }
 
 #swipe-music-sections {
@@ -173,6 +180,10 @@ footer {
     font-size: 15px;
     padding: 0 5px;
     text-transform: uppercase;
+}
+
+ {
+    border-bottom: 2px solid greenyellow;
 }
 
 #popular-artists img {
@@ -228,6 +239,10 @@ footer {
 #central-footer-top-side i {
     font-size: 22px;
     padding: 10px 12px;
+}
+
+#central-footer-top-side i:nth-child(3) {
+    font-size: 30px;
 }
 
 #central-footer-top-side {
