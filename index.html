@@ -15,9 +15,9 @@
 <body>
     <main class="flex">
         <menu id="left-menu">
-            <div class="left-menu-container">
                 <div class="spotify-logo">
-                    <img src="img/logo.svg" alt="Spotify logo">
+                    <img src="img/logo.svg" alt="Spotify logo" class="bigger-logo">
+                    <img src="img/logo-small.svg" alt="Spotify-logo-small" class="logo-hidden">
                 </div>
 
                 <div class="main-place">
@@ -45,36 +45,29 @@
                     </div>
                 </div>
 
-                <div class="left-playlist">
-
-                    <div class="container-playlist-left-bottom flex">
-                        
-                        <div id="playlist-height">
-                            <ul>
-                                <li class="hover">Nuova playlist</li>
-                                <li class="hover">Nuova playlist</li>
-                                <li class="hover">Nuova playlist</li>
-                                <li class="hover">Nuova playlist</li>
-                                <li class="hover">Nuova playlist</li>
-                                <li class="hover">Nuova playlist</li>
-                            </ul>
-                        </div>
-
-                        <div id="install-spotify" class="flex">
-                            
-                            <i class="far fa-arrow-alt-circle-down"></i> 
-                            <span class="hover">Installa app</span>
-                            
-                            <hr>
-
-                            <div class="user-specs">
-                                <i class="far fa-user-circle"></i> 
-                                <span id="user-name">Ale è bello</span> 
-                            </div>
-                        </div>
-                    </div>
+                <div id="playlist-height" class="flex">
+                    <ul>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                        <li class="hover">Nuova playlist</li>
+                    </ul>
                 </div>
-            </div>
+
+                <div id="install-spotify" class="flex">
+                            
+                    <i class="far fa-arrow-alt-circle-down"></i> 
+                    <span class="hover">Installa app</span>
+                    
+                    <hr>
+
+                    <div class="user-specs">
+                        <i class="far fa-user-circle"></i> 
+                        <span id="user-name">Ale è bello</span> 
+                    </div>
+                </div>       
         </menu>
 
         <section id="main-app">

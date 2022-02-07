@@ -61,33 +61,37 @@ footer {
 }
 
 #left-menu {
-    width: 15%;
-    height: 100%;
+    width: 15%; 
     background-color: black;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
 }
 
-#install-spotify {
-    height: 90px;
+
+#playlist-height {
+    overflow: auto;
+    height: 250px
+}
+
+.spotify-logo .logo-hidden{
+    display: none;
 }
 
 .left-menu-container {
     width: 90%;
     margin: 0 auto;
     line-height: 2.3rem;
-    height: 100%;
-}
-
-.left-playlist {
-    height: 65%;
-}
-
-#playlist-height {
     height: calc(100% - 75px);
 }
 
+.left-playlist {
+    height: 75px;
+}
+
 .spotify-logo img{
-    width: 100%;
+    width: 80%;
     padding: 20px;
 }
 
@@ -137,13 +141,12 @@ footer {
 
 #install-spotify {
     flex-direction: column;
-    height: 75px;
     display: inline;
+    margin-top: auto;
 }
 
 .user-specs {
     color: white;
-    font-size: 22px;
 }
 
 #playlists {
@@ -241,6 +244,12 @@ footer {
     align-items: center;
     color: white;
     background-color: #282828;
+    position: relative;
+    z-index: 2;
+}
+
+.margin-top {
+    margin-top: auto;
 }
 
 #footer-container {
@@ -394,7 +403,7 @@ footer {
         min-width: 50px;
     }
 
-    .spotify-logo{
+    .spotify-logo .bigger-logo{
         display: none;
     }
 
@@ -403,7 +412,7 @@ footer {
     }
 
     .main-place {
-        width: 70%;
+        width: 35%;
         margin: 20px auto;
     }
 
@@ -415,12 +424,34 @@ footer {
     #generate-playlist {
         display: none;
     }
+
+    #playlist-height {
+        display: none;
+    }
+
+    #install-spotify span, #install-spotify hr {
+        display: none;
+        margin: 0 auto;
+    }
+
+    #install-spotify {
+        flex-direction: column;
+        display: inline;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 28px;
+    }
+
+    .spotify-logo > .logo-hidden {
+        display: block;
+        width: 75px;
+        margin: 0px 2px;
+    }
 }
 
-@media screen and (max-height: 950px) {
-    #playlist-height {
-        overflow: auto;
-    }
+@media screen and (max-height: 710px) {
+
 }
 
 
