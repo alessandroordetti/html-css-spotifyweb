@@ -67,23 +67,15 @@ footer {
     font-size: 18px;
 }
 
+#install-spotify {
+    height: 90px;
+}
+
 .left-menu-container {
     width: 90%;
     margin: 0 auto;
     line-height: 2.3rem;
     height: 100%;
-}
-
-.spotify-logo {
-    height: 10%;
-}
-
-.main-place {
-    height: 15%;
-}
-
-#generate-playlist {
-    height: 10%;
 }
 
 .left-playlist {
@@ -420,8 +412,14 @@ footer {
         font-size: 30px;
     }
 
-    #install-spotify i {
+    #generate-playlist {
+        display: none;
+    }
+}
 
+@media screen and (max-height: 950px) {
+    #playlist-height {
+        overflow: auto;
     }
 }
 
