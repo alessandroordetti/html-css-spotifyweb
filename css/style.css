@@ -47,6 +47,10 @@ body {
     font-size: 30px;
 }
 
+li {
+    list-style: none;
+}
+
 main {
     height: 90vh; 
 }
@@ -67,6 +71,27 @@ footer {
     width: 90%;
     margin: 0 auto;
     line-height: 2.3rem;
+    height: 100%;
+}
+
+.spotify-logo {
+    height: 10%;
+}
+
+.main-place {
+    height: 15%;
+}
+
+#generate-playlist {
+    height: 10%;
+}
+
+.left-playlist {
+    height: 65%;
+}
+
+#playlist-height {
+    height: calc(100% - 75px);
 }
 
 .spotify-logo img{
@@ -74,25 +99,57 @@ footer {
     padding: 20px;
 }
 
-.main-place {
-    margin-bottom: 15px;
+.main-place p {
+    display: inline;
+}
+
+.main-place p:first-child {
+    border-left: 3px solid yellowgreen;
+}
+
+.border-here {
+    display: inline;
+    position: relative;
+}
+
+.border-here:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    bottom: 0;
+    border-bottom: 2px solid yellowgreen;
+    margin-left: 28px;
 }
 
 .left-playlist h4 {
     color: white;
+    text-transform: uppercase;
 }
 
 #make-playlist i {
     font-size: 40px;
 }
 
-#install-spotify {
+/* #install-spotify {
     flex-direction: column;
     justify-content: flex-end;
     height: 300px;
+} */
+
+.container-playlist-left-bottom {
+    flex-direction: column;
+    height: 100%;
 }
 
-#install-spotify p {
+#install-spotify {
+    flex-direction: column;
+    height: 75px;
+    display: inline;
+}
+
+.user-specs {
     color: white;
     font-size: 22px;
 }
@@ -173,6 +230,7 @@ footer {
 #swipe-music-sections {
     height: 5%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #swipe-music-sections ul li{
@@ -180,10 +238,6 @@ footer {
     font-size: 15px;
     padding: 0 5px;
     text-transform: uppercase;
-}
-
- {
-    border-bottom: 2px solid greenyellow;
 }
 
 #popular-artists img {
@@ -302,9 +356,6 @@ footer {
 
 
 
-
-
-
 @media screen and (max-width: 1200px) {
     .cards-container {
     flex-wrap: wrap;
@@ -332,6 +383,10 @@ footer {
     #left-menu {
         min-width: 180px;
     }
+
+    #right-footer, #left-footer {
+        flex-shrink: 2;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -340,32 +395,35 @@ footer {
         margin-bottom: 20px;
         margin-right: 0;
         }
-
-        #swipe-music-sections ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
 }
 
 @media screen and (max-width: 576px) {
     #left-menu {
-        min-width: 0;
+        min-width: 50px;
     }
 
     .spotify-logo{
         display: none;
     }
 
-    .main-place, .left-playlist {
+    .main-place p, .left-playlist {
         display: none;
     }
 
-    .left-menu-container {
+    .main-place {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .main-place i {
+        display: block;
+        font-size: 30px;
+    }
+
+    #install-spotify i {
 
     }
 }
-
 
 
 

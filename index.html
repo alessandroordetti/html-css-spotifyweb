@@ -10,7 +10,6 @@
     <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -22,12 +21,21 @@
                 </div>
 
                 <div class="main-place">
-                    <p class="hover"><i class="fas fa-home"></i> Home</p>
-                    <p class="hover"><i class="fas fa-search"></i> Cerca</p>
-                    <p class="hover"><i class="fas fa-grip-lines-vertical"></i> La tua libreria</p>
+                    <i class="fas fa-home"></i> 
+                    <p class="hover">Home</p>
+
+                    <br>
+
+                    <i class="fas fa-search"></i>
+                    <p class="hover">Cerca</p>
+
+                    <br>
+
+                    <i class="fas fa-align-justify"></i>
+                    <p class="hover">La tua libreria</p>
                 </div>
 
-                <div class="left-playlist">
+                <div id="generate-playlist">
                     <h4>
                         Playlist
                     </h4>
@@ -35,25 +43,35 @@
                     <div id="make-playlist">
                         <p class="hover"><i class="fas fa-plus-square"></i> Crea Playlist</p>
                     </div>
+                </div>
 
-                    <ul>
-                        <li class="hover">Nuova playlist</li>
-                        <li class="hover">Nuova playlist</li>
-                        <li class="hover">Nuova playlist</li>
-                        <li class="hover">Nuova playlist</li>
-                        <li class="hover">Nuova playlist</li>
-                        <li class="hover">Nuova playlist</li>
-                    </ul>
+                <div class="left-playlist">
 
-                    <div id="install-spotify" class="flex">
-                        <span class="hover">
-                            <i class="far fa-arrow-alt-circle-down"></i> Installa app
-                        </span>
+                    <div class="container-playlist-left-bottom flex">
+                        
+                        <div id="playlist-height">
+                            <ul>
+                                <li class="hover">Nuova playlist</li>
+                                <li class="hover">Nuova playlist</li>
+                                <li class="hover">Nuova playlist</li>
+                                <li class="hover">Nuova playlist</li>
+                                <li class="hover">Nuova playlist</li>
+                                <li class="hover">Nuova playlist</li>
+                            </ul>
+                        </div>
 
-                        <hr>
+                        <div id="install-spotify" class="flex">
+                            
+                            <i class="far fa-arrow-alt-circle-down"></i> 
+                            <span class="hover">Installa app</span>
+                            
+                            <hr>
 
-                        <p>
-                            <i class="far fa-user-circle"></i> Ale Fregno
+                            <div class="user-specs">
+                                <i class="far fa-user-circle"></i> 
+                                <span id="user-name">Ale è bello</span> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +87,7 @@
             <main id="playlists">
                 <nav id="swipe-music-sections">
                     <ul>
-                        <li class="hover">In evidenza</li>
+                        <div class="border-here"><li class="hover">In evidenza</li></div>
                         <li class="hover">Podcast</li>
                         <li class="hover">Classifiche</li>
                         <li class="hover">Generi e mood</li>
@@ -340,14 +358,16 @@
                 </div>
 
                 <div id="left-footer-options" class="flex">
-                    <i class="far fa-heart"></i>
+                    <p class="hover">
+                        <i class="far fa-heart"></i>
+                    </p>
                     <i class="far fa-folder"></i>
                 </div>
             </div>
 
             <div id="central-footer">
                 <div id="central-footer-top-side">
-                    <i class="fas fa-random"></i>
+                    <i class="fas fa-random hover"></i>
                     <i class="fas fa-step-backward"></i>
                     <i class="far fa-play-circle"></i>
                     <i class="fas fa-step-forward"></i>
