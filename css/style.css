@@ -219,6 +219,12 @@ footer {
     margin-bottom: 10px;
 }
 
+.h6-caracters {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
 .playlist-container .more-listening {
     margin-bottom: 10px;
     line-height: 1rem;
@@ -366,6 +372,34 @@ footer {
     left: 0;
 }
 
+#song-minute:hover {
+    height: 4px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+#song-minute:hover, .song-circle:hover {
+    background-color:limegreen;
+}
+
+.song-circle {
+    position: absolute;
+    display: block;
+    left: 100px;
+    top: 2px;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.song-circle:hover {
+    height: 14px;
+    width: 14px;
+}
+
 #right-footer {
     height: 100%;
     align-items: center;
@@ -390,6 +424,21 @@ footer {
     background-color: #c1c1c1;
     position: absolute;
     left: 0;
+}
+
+#actual-volume:hover, .volume-circle:hover {
+    background-color: limegreen;
+}
+
+.volume-circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 40px;
+    top: 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 
@@ -485,10 +534,6 @@ footer {
         width: 75px;
         margin: 0px 2px;
     }
-}
-
-@media screen and (max-height: 710px) {
-
 }
 
 
