@@ -222,6 +222,11 @@ footer {
     text-transform: uppercase;
 }
 
+#upgrade-spotify > .upgrade-hover:hover {
+    border: 3px solid white;
+    font-size: 15px;
+}
+
 #swipe-music-sections {
     height: 5%;
     text-align: center;
