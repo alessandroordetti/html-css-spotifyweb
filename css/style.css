@@ -32,6 +32,27 @@
     align-items: center;
 }
 
+.overlay-last-playlists {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgba(54, 44, 44, 0.507);
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 70px;
+}
+
+.overlay-last-playlists:hover {
+    opacity: 1;
+}
+
 .overlay i {
     font-size: 75px;
     color: white;
@@ -69,6 +90,17 @@ footer {
     line-height: 2.3rem;
 }
 
+.main-place-font-size {
+    font-size: 25px;
+}
+
+.first-main-place {
+    border-left: 3px solid yellowgreen;
+}
+
+.other-place {
+    padding-left: 3px;
+}
 
 #playlist-height {
     overflow: auto;
@@ -405,7 +437,7 @@ footer {
 
 @media screen and (max-width: 576px) {
     #left-menu {
-        min-width: 50px;
+        min-width: 80px;
     }
 
     .spotify-logo .bigger-logo{
