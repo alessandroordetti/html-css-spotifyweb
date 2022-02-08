@@ -441,6 +441,12 @@ footer {
     background-color: white;
 }
 
+.volume-circle:hover {
+    height: 14px;
+    width: 14px;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
