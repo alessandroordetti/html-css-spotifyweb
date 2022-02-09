@@ -30,6 +30,7 @@
     background-color: rgba(54, 44, 44, 0.507);
     justify-content: center;
     align-items: center;
+    font-size: 75px;
 }
 
 .overlay-last-playlists {
@@ -51,11 +52,12 @@
 
 .overlay-last-playlists:hover {
     opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
-.overlay i {
-    font-size: 75px;
+.overlay:hover {
     color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .playlist-logo:hover .overlay {
@@ -248,7 +250,7 @@ footer {
 
 #upgrade-spotify span {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 25%;
     color: white;
     border: 1px solid white;
@@ -289,6 +291,7 @@ footer {
     background-color: #282828;
     position: relative;
     z-index: 2;
+    overflow-x: hidden;
 }
 
 .margin-top {
@@ -466,7 +469,8 @@ footer {
 
     .playlist-logo > img {
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
+    padding: 15px;
     }
 
     .song-info span {        
